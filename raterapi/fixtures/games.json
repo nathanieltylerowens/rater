@@ -1,0 +1,41 @@
+[
+  {
+      "model": "raterapi.game",
+      "pk": 1,
+      "fields": {
+          "title": "Welcome To",
+          "description": "I've had better. I've had better?",
+          "designer": "Benoit Turpin",
+          "year_released": "1999-12-29",
+          "time_to_play": 5,
+          "number_of_players": 4,
+          "age": 9
+      }
+  },
+  {
+      "model": "raterapi.game",
+      "pk": 2,
+      "fields": {
+          "title": "Settlers of Catan",
+          "description": "I've had worse. I've had worse?",
+          "designer": "Klaus Teuber",
+          "year_released": "1999-12-31",
+          "time_to_play": 7,
+          "number_of_players": 4,
+          "age": 9
+      }
+  },
+  {
+      "model": "raterapi.game",
+      "pk": 3,
+      "fields": {
+          "title": "Dungeons & Dragons",
+          "description": "I've had mediocre. I've had mediocre?",
+          "designer": "Wizards of the Coast",
+          "year_released": "1999-12-30",
+          "time_to_play": 6,
+          "number_of_players": 5,
+          "age": 9
+      }
+  }
+]
