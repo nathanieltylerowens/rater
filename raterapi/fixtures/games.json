@@ -9,7 +9,8 @@
           "year_released": "1999-12-29",
           "time_to_play": 5,
           "number_of_players": 4,
-          "age": 9
+          "age": 9,
+          "categories": [2,3]
       }
   },
   {
@@ -22,7 +23,8 @@
           "year_released": "1999-12-31",
           "time_to_play": 7,
           "number_of_players": 4,
-          "age": 9
+          "age": 9,
+          "categories": [3,5]
       }
   },
   {
@@ -35,7 +37,8 @@
           "year_released": "1999-12-30",
           "time_to_play": 6,
           "number_of_players": 5,
-          "age": 9
+          "age": 9,
+          "categories": [1,2]
       }
   }
 ]
