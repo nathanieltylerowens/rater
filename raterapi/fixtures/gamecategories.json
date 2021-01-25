@@ -1,0 +1,58 @@
+[
+  {
+      "model": "raterapi.gamecategory",
+      "pk": 1,
+      "fields": {
+          "game": 1,
+          "category": 3
+      }
+  },
+  {
+    "model": "raterapi.gamecategory",
+    "pk": 1,
+    "fields": {
+        "game": 1,
+        "category": 6
+    }
+  },
+  {
+    "model": "raterapi.gamecategory",
+    "pk": 1,
+    "fields": {
+        "game": 1,
+        "category": 4
+    }
+  },
+  {
+    "model": "raterapi.gamecategory",
+    "pk": 1,
+    "fields": {
+        "game": 2,
+        "category": 8
+    }
+  },
+  {
+    "model": "raterapi.gamecategory",
+    "pk": 1,
+    "fields": {
+        "game": 2,
+        "category": 1
+    }
+  },
+  {
+    "model": "raterapi.gamecategory",
+    "pk": 1,
+    "fields": {
+        "game": 3,
+        "category": 3
+    }
+  },
+  {
+    "model": "raterapi.gamecategory",
+    "pk": 1,
+    "fields": {
+        "game": 3,
+        "category": 5
+    }
+  }
+]
