@@ -1,0 +1,44 @@
+[
+  {
+      "model": "raterapi.categories",
+      "pk": 1,
+      "fields": {
+          "name": "Board game"
+      }
+  },
+  {
+      "model": "raterapi.categories",
+      "pk": 2,
+      "fields": {
+          "name": "Role-playing game"
+      }
+  },
+  {
+      "model": "raterapi.categories",
+      "pk": 3,
+      "fields": {
+          "name": "MMO game"
+      }
+  },
+  {
+    "model": "raterapi.categories",
+    "pk": 4,
+    "fields": {
+        "name": "Strategy"
+    }
+  },
+  {
+    "model": "raterapi.categories",
+    "pk": 5,
+    "fields": {
+        "name": "Dice"
+    }
+  },
+  {
+      "model": "raterapi.categories",
+      "pk": 6,
+      "fields": {
+          "name": "Card"
+    }
+  }
+]
