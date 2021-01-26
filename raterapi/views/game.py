@@ -71,6 +71,7 @@ class Games(ModelViewSet):
 
     def get_queryset(self):
         search_text = self.request.query_params.get('q', None)
+        sort_option = self.request.query_params.get('orderby', None)
         # import pdb
         # pdb.set_trace()
         if search_text is not None:
@@ -80,5 +81,8 @@ class Games(ModelViewSet):
                 Q(designer__icontains=search_text)
             )
             return filterset
+        elif sort_option is not None:
+            sortset = Game.objects.order_by(sort_option)
+            return sortset    
         else:
             return self.queryset
