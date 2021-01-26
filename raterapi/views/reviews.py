@@ -71,6 +71,7 @@ class ReviewPlayerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Player
         fields = ['user', 'game_id', 'player_id']
+        depth = 2
 
 class GameSerializer(serializers.ModelSerializer):
     class Meta:
