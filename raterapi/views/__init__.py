@@ -4,3 +4,4 @@ from .game import Games
 from .categories import Categories
 from .reviews import ReviewsViewSet
 from .images import ImageViewSet
+from .ratings import RatingViewSet
