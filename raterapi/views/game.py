@@ -19,10 +19,10 @@ class Games(ViewSet):
         game.time_to_play = request.data["timeToPlay"]
         game.age = request.data["age"]
         categories = Categories.objects.get(pk=request.data["categoryId"])
-        game.categories.set(categories)
 
         try: 
             game.save()
+            game.categories.add(categories)
             serializer = GameSerializer(game, context={'request': request})
             return Response(serializer.data)
         except ValidationError as ex:
@@ -51,7 +51,7 @@ class CategoriesSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class GameSerializer(serializers.HyperlinkedModelSerializer):
+class GameSerializer(serializers.ModelSerializer):
     categories = CategoriesSerializer(many=True)
 
     class Meta:
@@ -60,5 +60,5 @@ class GameSerializer(serializers.HyperlinkedModelSerializer):
             view_name='game',
             lookup_field='id'
         )
-        fields = ('id', 'url', 'title', 'designer', 'year_released', 'number_of_players', 'time_to_play', 'age', 'categories')
+        fields = ('id', 'url', 'title', 'designer', 'year_released', 'number_of_players', 'time_to_play', 'age', 'categories', 'reviews')
         depth = 1
