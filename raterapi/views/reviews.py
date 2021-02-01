@@ -53,11 +53,7 @@ class ReviewsViewSet(ViewSet):
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reviews
-        url = serializers.HyperlinkedIdentityField(
-            view_name='review',
-            lookup_field='id'
-        )
-        fields = ('id', 'url', 'review')
+        fields = ('id', 'review', 'player', 'game')
 
 class ReviewUserSerializer(serializers.ModelSerializer):
     class Meta:
