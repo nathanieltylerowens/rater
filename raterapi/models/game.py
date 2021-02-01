@@ -12,7 +12,7 @@ class Game(models.Model):
 
     @property
     def avg_rating(self):
-        ratings = Ratings.objects.filter(game__id=self.id)
+        ratings = Ratings.objects.filter(game_id=self.id)
 
         if len(ratings):
             sum_of_ratings = 0
