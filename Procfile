@@ -1,0 +1,1 @@
+web: gunicorn raterAPI.wsgi --log-file -
