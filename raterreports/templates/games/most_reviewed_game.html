@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Most Reviewed Game</title>
+  </head>
+  <body>
+    <h1>Game With Most Reviews</h1>
+    <div>
+    {% for game in most_reviewed_game %}
+    <ol>
+        <h2>{{ game.game_title }}</h2> <h4>Number of Reviews: {{game.review_count}}</h4>
+    </ol>
+    {% endfor %}
+  </div>
+  </body>
+</html>

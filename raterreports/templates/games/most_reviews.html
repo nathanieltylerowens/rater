@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Top Three Reviewers</title>
+  </head>
+  <body>
+    <h1>
+    <div>
+    {% for user in top_three_reviewers %}
+    <ol>
+        <h2>{{ user.full_name }}</h2> <h4>Number of submitted reviews: {{user.review_count}}</h4>
+    </ol>
+    {% endfor %}
+  </div>
+  </body>
+</html>

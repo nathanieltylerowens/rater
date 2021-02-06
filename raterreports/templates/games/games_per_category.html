@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Games in Category</title>
+  </head>
+  <body>
+    <h1>Number of Games per Category</h1>
+    <div>
+    {% for category in games_per_category %}
+    <ol>
+        <h2>{{ category.cat_name }}</h2> <h4>Games in category: {{category.games_in_cat}}</h4>
+    </ol>
+    {% endfor %}
+  </div>
+  </body>
+</html>
