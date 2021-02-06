@@ -1,6 +1,7 @@
 from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
+from django.contrib import admin
 from raterapi.views import register_user, login_user, Games, Categories, ReviewsViewSet, ImageViewSet, RatingViewSet
 from django.conf.urls.static import static
 from django.conf import settings
@@ -14,6 +15,7 @@ router.register(r'rating', RatingViewSet, 'rating')
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('admin/', admin.site.urls),
     path('register', register_user),
     path('login', login_user),
     path('', include('raterreports.urls')),
